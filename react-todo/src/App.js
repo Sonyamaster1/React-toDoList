@@ -8,17 +8,17 @@ function App() {
     {
       id: 1,
       complited: false,
-      title: "Scratch the back",
+      title: "Прочитать книгу",
     },
     {
       id: 2,
       complited: false,
-      title: "Kiss me",
+      title: "Помыть посуду",
     },
     {
       id: 3,
       complited: false,
-      title: "Give me flowers",
+      title: "Написать код",
     },
   ]);
 
@@ -49,7 +49,7 @@ function App() {
   return (
     <Context.Provider value={{ removeTodo }}>
       <div className="Wrapper">
-        <h1>React</h1>
+        <h1>To do List</h1>
         <AddTodo onCreate={addTodo} />
         {todos.length ? (
           <TodoList todos={todos} onToggle={toggleTodo} />
